@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gym Fitness</title>
+  <!-- css de boostrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- css propio -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg botonera">
+    <div class="container">
+      <!-- ------------------LOGO------------------------ -->
+      <a class="navbar-brand" href="#">
+        <img src="./img/brand/logo.png" alt="Logo Fitness Gym">
+      </a>
+      <!-- ------------BTN HAMBURGUESA--------------------- -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- en caso de querer cambiar el btn hamburguesa por uno propio reemplazar en la etiqueta spam -->
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- me ms en la ul cambia de end a start de derecha a izquierda -->
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <!-- drop1 club life -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Club Life
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <!-- drop2 training -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              training
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <!-- drop3 instructors -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Instructors
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <!-- contacto -->
+          <li class="nav-item">
+            <a class="nav-link " href="#">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- FIN NAV -->
+
+  <!-- HEADER  -->
+  <header class="bg-black">
+    <div class="containr">
+      <img src="./img/headers/header.png" alt="training Fitness" class="d-block mx-auto">
+      <!-- class d-block =  display block para que se muestre en bloque
+            mx margin y eje x automatico -->
+    </div>
+  </header>
+  <!-- FIN HEADER  -->
+
+  <!-- MAIN -->
+  <main>
+    <!-- SECTION1 -->
+    <section class="intro container">
+      <!-- GRILLAS EN BS clase ROW -->
+      <!-- -------------------CAJAS--------------------------- -->
+      <div class="row">
+        <!-- en mobile sm de las 3 cajas cada una ocupan 12 columnas
+                   en desktop cada una ocupa 4
+                   d-flex display flex para que floten -->
+        <figure class="col-sm-12 col-md-4 d-flex mb-md-2">
+          <img src="./img/gym/gym1.png" alt="pictograma hombre levantado pesa">
+          <div>
+            <h2>
+              Musuculomanía <br>
+              Universo natural
+            </h2>
+            <a href="#">View More</a>
+          </div>
+        </figure>
+        <!-- ENDS FIGURE 1 -->
+        <figure class="col-sm-12 col-md-4 d-flex mb-md-2">
+          <img src="./img/gym/gym2.png" alt="pictograma hombre levantado 2 pesas">
+          <div>
+            <h2>
+              Bodyweight
+              <br>
+              2-day certification
+
+            </h2>
+            <a href="#">View More</a>
+          </div>
+        </figure>
+        <!-- ENDS FIGURE 2 -->
+        <figure class="col-sm-12 col-md-4 d-flex mb-md-2">
+          <img src="./img/gym/gym3.png" alt="pictograma hombre levantado pesa  grande">
+          <div>
+            <h2>
+              accredited master <br>
+              trainer
+            </h2>
+            <a href="#">View More</a>
+          </div>
+        </figure>
+        <!-- ENDS FIGURE 3 -->
+      </div>
+      <!-- ENDS ROW -->
+    </section>
+    <!-- FIN SECTION1 -->
+
+    <!-- SECTION2 -->
+    <!-- INTRO -->
+    <section class="row container mx-auto intro-text mb-4">
+      <!-- col4 -->
+      <div class="col-sm-12 col-md-4">
+        <h3 class="text-uppercase">20 minutes. 20 days <br> 20 inches.
+        </h3>
+      </div>
+      <!-- FINcol4 -->
+      <!-- col8 -->
+      <div class="col-sm-12 col-md-8 d-flex">
+        <img src="./img/utilities/waves.png" alt="separador waves" class="me-4 d-none d-md-block">
+        <!-- d-none d-md-block a partir de medium para mas chico se vuelve bloque y se oculta -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem porro delectus sapiente laborum saepe
+          architecto. Aperiam quaerat velit ratione. Libero illo distinctio animi ipsam soluta eaque omnis officia
+          cumque veniam.</p>
+      </div>
+      <!-- FINcol8 -->
+      <!-- caja video -->
+      <div class="col-sm-12 col-md-12 mt-3">
+        <img src="./img/utilities/video.png" alt="holder video" class="w-100">
+        <!-- w-100 width al 100% -->
+      </div>
+      <!-- FIN caja video -->
+    </section>
+    <!-- FIN SECTION2 -->
+
+
+    <!-- SECTION3 -->
+    <!-- SLOGAN -->
+    <section class="slogan mt-5 py-4">
+      <div class="container px-4 text-center">
+        <p class="text-white text-uppercase  fs-2 mb-5 mt-5">
+          Discover how real science is applied to training <br>
+          programs, nutrition plans and supplementation to <br>
+          get you to your goals as quickly as possible.
+        </p>
+        <a href="#" class="btn-gral">get started</a>
+      </div>
+    </section>
+    <!-- FIN SECTION3 -->
+
+
+    <!-- SECTION4 -->
+    <!-- AROS -->
+    <section class="sponsors row container mt-5 mx-auto">
+      <div class="col-md-6">
+        <!-- 6 col vacias y al lado 6 col con texto (miti miti) -->
+      </div>
+      <div class="col-md-6">
+        <p class="px-5">The Harrison twins are International Fitness Models and Personal Trainers. They have been
+          training now for a number of years and have a vast amount of knowledge on diet and training and how to get the
+          best results possible for their clients.</p>
+      </div>
+      <div class="col-sm-12 mt-5">
+        <img src="./img/gym/circles.png" alt="aros" class="mx-auto d-block">
+        <img src="./img/brand/logos.png" alt="sponsores" class="mx-auto d-block mt-5">
+        <!-- bueno acá tengo una consulta, tanto en la clase como ahora por mi cuenta no queda taan centrado -->
+      </div>
+    </section>
+    <!-- FIN SECTION4 -->
+
+
+    <!-- SECTION5 -->
+    <!-- FAQS -->
+    <section class="accordion accordion-flush container my-5" id="accordionFlushExample">
+      <!-- FAQ1 -->
+      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <p>
+                              Why a high protein diet of 1.5g per pound of bodyweight has significant muscle building and weight <br>
+                              loss benefits without any harmful effects.
+                            </p>
+                          </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                            <code>.accordion-flush</code> class. This is the first item's accordion body.
+                          </div>
+                        </div>
+      </div>
+      <!-- FIN FAQ1 -->
+
+      <!-- FAQ2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            <p>
+              Your body is smart. Eventually, it will adapt to the stress of whatever training you are using <br>
+              and stop responding. Your 3 sets of 10 reps might work fine initially, but they won’t work forever. <br>
+              Your training needs to be smarter than your body. My programs are designed to keep the body <br>
+              stressed and
+            </p>
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+            <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being
+            filled with some actual content.
+          </div>
+        </div>
+      </div>
+      <!-- FIN FAQ2 -->
+
+      <!-- FAQ3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            <p> Why my supplement company, JYM Supplement Science forced the industry to change. <br>
+              Ending common practices like protein spiking, prop formulas, and concentrated formulas.</p>
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+            <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
+            happening here in terms of content, but just filling up the space to make it look, at least at first glance,
+            a bit more representative of how this would look in a real-world application.
+          </div>
+        </div>
+
+      </div>
+      <!-- FINFAQ3 -->
+
+      <!-- FAQ4 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree">
+            <p>
+              And much, much more that you can discover when you take your free 7 day trial membership <br>
+              as well as the app included with your membership.</p>
+          </button>
+        </h2>
+        <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+            <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
+            happening here in terms of content, but just filling up the space to make it look, at least at first glance,
+            a bit more representative of how this would look in a real-world application.
+          </div>
+        </div>
+
+      </div>
+      <!-- FIN FAQ4 -->
+
+      <!-- bueno aca la 3era faq me abre la 4ta tambien -->
+      <!-- no logro achicar los icons -->
+    </section>
+    <!-- FIN SECTION5 -->
+
+
+
+    <!-- SECTION6 -->
+    <section class="call-to-action mt-4 py-5 text-white">
+      <div class="container text-center">
+        <h3 class=" text-uppercase mt-2">
+          20 Minute Body is more than just workouts, <br>
+          it’s mind over body and finding your
+        </h3>
+        <h3 class="text-uppercase my-4">
+          FITNESS FROM WITHIN.
+        </h3>
+      </div>
+      <!-- cajita botones -->
+      <div class="box-tabs  ">
+        <h4>lose fat</h4>
+        <h4 class="active"> gain strength</h4>
+        <h4>build muscle</h4>
+      </div>
+      <h4 class="container text.text-center">If you’re looking to burn some serious fat and you’re not afraid of a
+        little intensity, you’ve come to the right program. Super Shredded 8 (“SS8” for short) is an 8-week get-lean
+        plan based mainly on supersets – but it’s so much more than that. If I had to sum up what Super Shredded 8 is, I
+        would say it's a combination of my Show Time, 1-2-3 Lean and Un-Rested Development programs. That’s quite a
+        hybrid, huh? <br><br>
+
+        My Super-Man program uses supersets in which exercises for opposing muscle groups are paired together. With SS8,
+        the supersets pair exercises for the same muscle group. This is technically called a “compound set,” a term
+        coined by the late Joe Weider over 50 years ago. But nowadays, the lifting community basically calls any pairing
+        of two exercises with no rest in between a superset, so I’ll stick with the more modern verbiage. </h4>
+    </section>
+    <!-- FIN SECTION6 -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- SECTION7 -->
+    <!-- RULES -->
+    <!-- REGLA1 -->
+    <section class="row container mt-5 d-flex justify-content-end section-regla1 m-auto">
+      <div class="col-md-6">
+        <h2>Rule #1: Eat A LOT of <span class="textred">Protein</span>
+        </h2>
+        <p>
+          My Super-Man program uses supersets in which exercises for opposing muscle groups are paired together. With
+          SS8, the supersets pair exercises for the same muscle group. This is technically called a “compound set,” a
+          term coined by the late Joe Weider over 50 years ago. But nowadays, the lifting community basically calls any
+          pairing of two exercises with no rest in between a superset, so I’ll stick with the more modern verbiage.
+        </p>
+      </div>
+    </section>
+    <!-- FIN REGLA1 -->
+
+    <!-- acá estoy teniendo problemas con las cajas section de las reglas no logro coincidir que las cajas tengan el margen exacto como el psd -->
+
+    <!-- REGLA2 -->
+    <section class="row container mt-5 d-flex justify-content-start section-regla2 m-auto mt-4 py-5 text-white ps-5">
+      <div class="col-md-8 p-5">
+        <h2>Rule #2: Eat <span class="textred">Frequently</span></h2>
+        <p>
+          My Super-Man program uses supersets in which exercises for opposing muscle groups are paired together. With
+          SS8, the supersets pair exercises for the same muscle group. This is technically called a “compound set,” a
+          term coined by the late Joe Weider over 50 years ago. But nowadays, the lifting community basically calls any
+          pairing of two exercises with no rest in between a superset, so I’ll stick with the more modern verbiage.
+        </p>
+      </div>
+    </section>
+    <!-- FIN REGLA2 -->
+
+    <!-- REGLA3 -->
+    <section class="row container mt-5 d-flex justify-content-end section-regla3">
+      <div class="col-md-6">
+        <h2>Rule #3: Get <span class="textred">Ample Fats</span>
+        </h2>
+        <p>
+          My Super-Man program uses supersets in which exercises for opposing muscle groups are paired together. With
+          SS8, the supersets pair exercises for the same muscle group. This is technically called a “compound set,” a
+          term coined by the late Joe Weider over 50 years ago. But nowadays, the lifting community basically calls any
+          pairing of two exercises with no rest in between a superset, so I’ll stick with the more modern verbiage.
+        </p>
+      </div>
+
+    </section>
+    <!-- FIN RELGA3 -->
+
+
+
+
+    <!-- SECTION8 -->
+    <!-- PRODUCTOS -->
+    <section class="our-products bg-lightgray text-center py-5 products">
+      <h2 class="text-uppercase font-weight-700 text-black text-uppercase my-4">OUR PRODUCTS</h2>
+      <p class="mb-4 mx-auto">My Super-Man program uses supersets in which exercises for opposing muscle groups are paired
+        together. With SS8, the supersets pair exercises for the same muscle group. This is technically called a
+        “compound set,” a term coined by the late Joe Weider over 50 years ago. But nowadays, the lifting community
+        basically calls any pairing of two exercises with no rest in between a superset, so I’ll stick with the more
+        modern verbiage.</p>
+
+      <!-- Cajitas blancas -->
+      <div class="d-flex justify-content-around mb-4">
+        <div class="tab-box"></div>
+        <div class="tab-box"></div>
+        <div class="tab-box"></div>
+        <div class="tab-box selected"></div>
+        <div class="tab-box"></div>
+        <div class="tab-box"></div>
+      </div>
+    </section>
+
+      <!-- Caja roja con acordeones -->
+      <section class="accordion accordion-flush container my-5" id="accordionFlushExample">
+        <section class="accordion accordion-flush container my-5" id="accordionFlushExample">
+          <div class="row">
+              <!-- Acordeones a la izquierda -->
+              <!-- 1 -->
+              <div class="col-md-6">
+                  <div class="accordion-item">
+                      <!-- Tu primer elemento de acordeón -->
+                      <!-- <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          <p>
+                            Why a high protein diet of 1.5g per pound of bodyweight has significant muscle building and weight <br>
+                            loss benefits without any harmful effects.
+                          </p>
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                          <code>.accordion-flush</code> class. This is the first item's accordion body.
+                        </div>
+                      </div>
+                  </div>
+              </div> -->
+      
+              <!-- 2 -->
+              <div class="col-md-6">
+                  <div class="accordion-item">
+                      <!-- Tu segundo elemento de acordeón -->
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          <p>
+                            Why a high protein diet of 1.5g per pound of bodyweight has significant muscle building and weight <br>
+                            loss benefits without any harmful effects.
+                          </p>
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                          <code>.accordion-flush</code> class. This is the first item's accordion body.
+                        </div>
+                      </div>
+                  </div>
+              </div>
+      
+              <!-- 3 -->
+              <div class="col-md-6">
+                  <div class="accordion-item">
+                      <!-- Tu tercer elemento de acordeón -->
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          <p>
+                            Why a high protein diet of 1.5g per pound of bodyweight has significant muscle building and weight <br>
+                            loss benefits without any harmful effects.
+                          </p>
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                          <code>.accordion-flush</code> class. This is the first item's accordion body.
+                        </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      
+          <!-- Acordeones a la derecha-->
+          <div class="row">
+              <!-- 1 -->
+              <div class="col-md-6">
+                  <div class="accordion-item">
+                      <!-- Tu cuarto elemento de acordeón -->
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          <p>
+                            Why a high protein diet of 1.5g per pound of bodyweight has significant muscle building and weight <br>
+                            loss benefits without any harmful effects.
+                          </p>
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                          <code>.accordion-flush</code> class. This is the first item's accordion body.
+                        </div>
+                      </div>
+                  </div>
+              </div>
+      
+              <!-- 2 -->
+              <div class="col-md-6">
+                  <div class="accordion-item">
+                      <!-- Tu quinto elemento de acordeón -->
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          <p>
+                            Why a high protein diet of 1.5g per pound of bodyweight has significant muscle building and weight <br>
+                            loss benefits without any harmful effects.
+                          </p>
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                          <code>.accordion-flush</code> class. This is the first item's accordion body.
+                        </div>
+                      </div>
+                  </div>
+              </div>
+      
+              <!-- 3 -->
+              <div class="col-md-6">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <p>
+                          Why a high protein diet of 1.5g per pound of bodyweight has significant muscle building and weight <br>
+                          loss benefits without any harmful effects.
+                        </p>
+                      </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                        <code>.accordion-flush</code> class. This is the first item's accordion body.
+                      </div>
+                   
+              </div>
+          </div>
+      </section>
+      
+    </section>
+    
+    
+
+    
+    <!-- FIN SETCION8 -->
+
+
+    <!-- SECTION9 -->
+    <!-- STEPS -->
+    <section class="steps-container px-5 mx-auto">
+      <div class="text-uppercase container text-center">
+        <h2>
+          3 Step Process to <p> get started</p>
+        </h2>
+      </div>
+
+
+      <div class="row">
+       <!--  FIGURE 1 -->
+        <figure class="col-sm-12 col-md-4 mb-md-2">
+          <div>
+            <img src="./img/utilities/circle-black.png" alt="circulos negros" class="mb-">
+          </div>
+          <h2>
+            STEP <span class="textred">ONE</span>
+          </h2>
+          <p>
+            My Super-Man program uses super sets in which exercises for opposing muscle groups are paired together. With
+            SS8, the supersets pair exercises for the same muscle group.
+          </p>
+
+
+        </figure>
+        <!-- ENDS FIGURE 1 -->
+
+        <!--  FIGURE 2 -->
+        <figure class="col-sm-12 col-md-4  mb-md-2">
+          <div>
+            <img src="./img/utilities/circle-black.png" alt="circulos negros">
+          </div>
+
+          <div>
+            <h2>
+              STEP <span class="textred">TWO</span>
+
+            </h2>
+            <p>
+              My Super-Man program uses super sets in which exercises for opposing muscle groups are paired together.
+              With SS8, the supersets pair exercises for the same muscle group.
+            </p>
+
+
+          </div>
+        </figure>
+        <!-- ENDS FIGURE 2 -->
+
+         <!-- FIGURE 3 -->
+        <figure class="col-sm-12 col-md-4  mb-md-2">
+          <div>
+            <img src="./img/utilities/circle-black.png" alt="circulos negros">
+          </div>
+
+          <div class="">
+            <h2>
+              STEP <span class="p-letrasRojas">THREE</span>
+            </h2>
+            <p>
+              My Super-Man program uses super sets in which exercises for opposing muscle groups are paired together.
+              With SS8, the supersets pair exercises for the same muscle group.
+            </p>
+
+          </div>
+        </figure>
+        <!-- ENDS FIGURE 3 -->
+      </div>
+    </section>
+    <!-- FIN SETCION9 -->
+
+
+
+
+
+
+
+
+
+
+    <!-- FINALSECTION -->
+    <section class=" mt-5 py-4 final">
+      <div class="text-white text-uppercase container px-4 text-center">
+        <h3 class="text-uppercase my-4">
+          GET IN SHAPE NOW
+        </h3>
+        <p>Join now for a free 7 day trial</p>
+        <p class="enfasis">GET STARTED!</p>
+      </div>
+    </section>
+    <!-- FIN DEL FIN-->
+
+
+
+
+
+
+
+  </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- JS deBS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

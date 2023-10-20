@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+*{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.botonera a{
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: .8em;
+    font-weight: 400;
+    color: black;
+}
+
+header img{
+    width: 100%;
+}
+
+/* inicia intro */
+.intro{
+    background-color: white;
+    transform: translateY(-100px);
+    padding: 70px 0;
+    
+    box-shadow: -1px 3px 25px -4px rgba(122,115,122,1);
+}
+    .intro figure{
+        align-items: center;
+        justify-content: space-around;
+        /* margin-left: 3px;
+        margin-right: 3px; 
+        no logro ajustar el margen*/
+        
+    }
+    .intro h2{
+        font-weight: 700;
+        font-size: 1.2em;
+        text-transform: uppercase;
+    }
+    .intro a{
+        color: #e74c3c;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+
+@media (width < 769px){
+    .intro{
+        transform: none;
+        margin-top: 30px;
+        box-shadow: none;
+    }
+}
+
+/* INTRO TEXT */
+.intro-text h3{
+    color: #e74c3c;
+    font-weight: 700;
+    font-size: 2.4em;
+}
+
+    .intro-textp{
+        font-size: 1.4em;
+        line-height: 1.6em;
+        font-weight: 400;
+    }
+    
+ /* SLOGAN */
+ .slogan{
+    background-color: #e74c3c;
+    
+ }
+    .slogan .btn-gral{
+        background-color: white;
+        color: #e74c3c;
+        text-align: center;
+        padding: 10px 50px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 2em;
+    }
+    /* SPONSORS */
+.sponsors p{
+    font-size: 1.4em;
+    line-height: 1.6em;
+    font-weight: 400;
+ }   
+
+ /* FAQS */
+ /* .accordion p{
+    color: black;
+    font-size: 1.3em;
+
+ }
+    .accordion p:before{
+        content: url(../img/icons/circle-plus-svgrepo-com.svg);
+    } */
+    .accordion p {
+        color: black;
+        font-size: 1.3em;
+        padding-left: 20px; 
+        position: relative;
+    }
+    
+    .accordion p::before {
+        content: "";
+        background: url(../img/icons/circle-plus-svgrepo-com.svg) no-repeat;
+        background-size: contain; 
+        width: 150px; 
+        height: 50px; 
+        display: inline-block;
+        margin-right: -30px; 
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(-30px, -50%);
+    }
+
+/* CALL TO ACTION */
+.call-to-action{
+    background-color: #e74c3c;
+    
+}
+.call-to-action h3:first-child{
+    font-size: 2em;    
+}
+.call-to-action h3:last-child{
+    font-size: 5em;
+    font-weight: 700;
+}
+
+.call-to-action .box-tabs{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin:50px auto;
+    padding: 30px;
+    text-transform: uppercase;
+    box-shadow: -1px 3px 25px -4px rgb(19, 18, 19);
+
+}
+.call-to-action .box-tabs .active{
+    color: black;
+    font-weight: 700;
+}
+
+.section-regla1{
+  
+     h2{
+        font-weight: 700;
+        font-size: 1.2em;
+        text-transform: uppercase;
+    }
+    .p-letrasRojas{
+        color:#e74c3c
+    }
+}
+
+.section-regla2{
+background: rgb(0, 0, 0);
+h2{
+    margin-left: 7em;
+    font-weight: 700;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+p{
+    margin-left: 7em;
+}
+.p-letrasRojas{
+    color:#e74c3c
+}
+}
+
+.section-regla3{
+    margin-bottom: 5em;
+    h2{
+       font-weight: 700;
+       font-size: 1.2em;
+       text-transform: uppercase;
+   }
+   .p-letrasRojas{
+       color:#e74c3c 
+   }
+
+}
+
+.final{
+    background-color: #e74c3c;
+    h3{
+        font-size: 5em;
+        font-weight: 700;
+    }
+    .enfasis{
+        
+        margin-top: 2em;
+        text-align: center;
+         
+        text-transform: uppercase;
+         
+        font-size: 3em;
+        font-weight: 600;
+
+    }
+}
+
+.steps-container{
+    background-color: white;
+    margin-top: 20px;
+    width: 80%;
+}
+
+.steps-container h2{
+    
+}
+
+.steps-container h3{
+    font-size: 5em;
+    font-weight: 700;
+}
+.steps-container span{
+    color:#e74c3c 
+
+}
+
+
+.textred{
+    color:#e74c3c 
+}
+
+.steps-container img{
+    width: 200px;
+}
+
+.products{
+    background-color: rgb(208, 202, 202);
+}
+.products h2{
+    font-size: 5em;
+    font-weight: 700;
+
+}
+.products p{
+
+}
